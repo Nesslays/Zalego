@@ -1,0 +1,132 @@
+  .navbar-light{
+  background-color:!important;
+  border-color:none;
+  color:red;
+  margin-top: 10px;
+  margin-left: 2%;
+  width:auto;
+  }
+  .nav{
+    color:red;
+  }
+    .wrapper{
+      width: 97.3%;
+      margin-left: 1.4%; 
+
+    }
+	
+#iframe{
+float:right;
+background-color:#b3b3ff;
+border:#b3b3ff;
+}
+
+.slider {
+  width:100%;
+  height: 40%;
+  margin: 0px auto;
+  position: relative;
+}
+.slide1,.slide2,.slide3,.slide4 {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+}
+.slide1 {
+  background: url(images/tech2.jpg )no-repeat center ;
+  
+      background-size: cover;
+    animation:fade 15s infinite;
+-webkit-animation:fade 15s infinite;
+
+} 
+.slide2 {
+  background:url(images/tech.jpg)no-repeat center ;
+ 
+      background-size:cover;
+    animation:fade2 15s infinite;
+-webkit-animation:fade2 15s infinite;
+}
+.slide3 {
+    background: url(images/tech6.jpg)no-repeat center ;
+  
+      background-size: cover;
+    animation:fade3 15s infinite;
+-webkit-animation:fade3 15s infinite;
+}
+.slide4 {
+    background: url(images/tech4.jpg)no-repeat center ;
+  
+      background-size: cover;
+    animation:fade4 15s infinite;
+-webkit-animation:fade4 15s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.33% { opacity: 0}
+  66.55% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.33% { opacity: 1}
+  66.55% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.33% { opacity: 0}
+  66.55% { opacity: 1}
+  100% { opacity: 0}
+}
+@keyframes fade4
+{
+  0%   {opacity:0}
+  33.33% { opacity: 0}
+  66.55% { opacity: 0}
+  100% { opacity: 1}
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
